@@ -15,7 +15,7 @@ console.log("Hello Universe !");
 //     document.getElementById("p1").innerHTML = "Hello " + name;
 // }
 
-
+alert('hello world')
 // type conversions 
 
 // let age = 19;
