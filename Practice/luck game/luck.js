@@ -10,6 +10,7 @@ document.getElementById("resetbtn").onclick = function(){
     document.getElementById("dicespace1").innerHTML = String(guessedNo);
     document.getElementById("dicespace2").innerHTML = String("?");
     document.getElementById("guessedNo").value = null
+    document.getElementById("msg").innerHTML = "Guess It..."
 }
 document.getElementById("btn").onclick = function(){
     guessedNo = Number(document.getElementById("guessedNo").value) ;
