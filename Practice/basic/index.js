@@ -176,15 +176,15 @@ console.log("Hello Universe !");
         // document.getElementById("p1").innerHTML = n +" is " + (isEven(n) ? "Even" : "odd")        
         
         
-        // different string representations using toLocalString function
-        // =============================================================
-        // returns the language sensitive representation of number 
-        // =======================================================
+// different string representations using toLocalString function
+// =============================================================
+// returns the language sensitive representation of number 
+// =======================================================
 
-        let num = 39894802.4843
+        // let num = 39894802.4843
 
-        console.log(num.toLocaleString(undefined,{style:"currency" ,currency:"INR"}))
-        console.log(num.toLocaleString(undefined,{style:"percent"}))
-        console.log(num.toLocaleString(undefined,{style:"unit" ,unit:"celsius"}))
-        console.log(num.toLocaleString(undefined,{style:"unit" ,unit:"mile"}))
+        // console.log(num.toLocaleString(undefined,{style:"currency" ,currency:"INR"}))
+        // console.log(num.toLocaleString(undefined,{style:"percent"}))
+        // console.log(num.toLocaleString(undefined,{style:"unit" ,unit:"celsius"}))
+        // console.log(num.toLocaleString(undefined,{style:"unit" ,unit:"mile"}))
 
