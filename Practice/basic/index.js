@@ -188,3 +188,82 @@ console.log("Hello Universe !");
         // console.log(num.toLocaleString(undefined,{style:"unit" ,unit:"celsius"}))
         // console.log(num.toLocaleString(undefined,{style:"unit" ,unit:"mile"}))
 
+// spread operator (...)
+// =====================
+
+// allows an iterable such as an array or string to be expanded in places where zero or more arguments are expected (Unpacks the elements)
+// =======================================================================================================================================
+
+        // let numbers = [1,0,20,31,45,6,46,55,26,55,3264,3]
+        // console.log(numbers)
+        // console.log(...numbers)
+
+        // let names = ["Jay","Harsh","Sumit","Rishabh"]
+        // let cars = ["Ciron","virtus","Fortuner","Porche"]
+        // console.log(names)
+        // console.log(...names)
+
+        // names.push(cars)
+        // console.log(names)
+
+        // names.push(...cars)
+        // console.log(names)
+
+// rest parameter(...)
+// ====================
+
+// represents an indefinite number of parameters(packs arguments into an array)
+// ============================================================================
+
+
+        // function total(...numbers){
+        //         let total = 0
+        //         for(let num of numbers){
+        //                 total += num
+        //         }
+        //         return total
+        // }
+        // console.log(total(10,40,49,20))
+        // console.log(total(49,20))
+        // console.log(total(49,20,44,20,49,20,53,10,57))
+
+// callback = a function passed as an argument to another function
+// ===============================================================
+
+// Ensures that a function is not going
+// to run before a task is completed
+// helps us develop asynchronous code that helps us avoid errors and potential problems
+// EX. In file type converted program wait for a file to load then continues the further execution
+// ===============================================================================================
+
+        // function sum(a,b ,display){
+        //         let total = a+b
+        //         display(total)
+        // }
+        // function display(something){ 
+        //         console.log(something)
+        // }
+
+        // sum(10,15,display)
+
+// array.forEach() = executes a provided callback function once for each array element
+// ===================================================================================
+
+// element , index and array will be always provided by the forEach function so we don't necessarily need to declare it..
+// ======================================================================================================================
+        
+        // let names = ["jay","harsh","darshit","rishabh"]
+        // names.forEach(capitalize)
+        // names.forEach(print)
+
+        // function capitalize(element,index,array){
+        //         array[index] = element.toUpperCase() 
+        // }
+        
+        // function print(element){
+        //         console.log(element)
+        // }
+
+
+
+
