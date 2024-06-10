@@ -264,6 +264,99 @@ console.log("Hello Universe !");
         //         console.log(element)
         // }
 
+// array.map() = executes a provided callback function once for each array element and creates a new array
+// =======================================================================================================
+// works similar as a forEach mathod 
+// =================================
 
+        // let nums = [1,2,3,4,5,6,7]
+        // let cubes = nums.map(cube)
+        // cubes.forEach(print)  
+        // console.log(...cubes)
+        // function cube(element){
+        //         return Math.pow(element,3)
+        // }
+        // function print(element){
+        //         console.log(element)
+        // }
+
+ 
+// array.filter() = creates a  new array with all elements that pass the test provided by a function
+// =================================================================================================
+
+        // let ages = [15,48,53,12,74,7,49]
+        // let adults = ages.filter(checkAge)
+
+        // console.log(...adults)
+
+        // function checkAge(element){
+        //         return element >= 18
+        // }
+
+
+// array.reduce() = reduces an array to a single value
+// ===================================================
+
+        // let ages = [15,48,53,12, 74,7,49]
+        // let adults = ages.reduce(checkAge)
+
+        // console.log(adults)
+
+        // function checkAge(total,element){
+        //         return element+ total
+        // }
+
+// array.sort() = by default sorts an array based on string and for numeric sorting we need to provide function that has two parameters and returns positive on greater value , zero in equal and negetive on less value.
+// ======================================================================================================================================================================================================================
+
+        // let ages = [15,48,53,12, 74,7,49]
+        // // let adults = ages.sort((a,b) => a-b)
+        
+        // ages = ages.sort(compare)
+
+        // function compare(a,b){
+        //         return a-b
+        // }
+        // console.log(...ages)
+
+// arrow function(=>) = compact alternative to a traditional function
+// ==================================================================
+
+        // let ages = [15,53,12, 74,7,49]
+        // let squared = ages.map((element) => element*element);
+
+        // let squared = ages.map((a) => Math.pow(a,2) );
+
+        // ages.forEach(function(element){
+        //         return Math.pow(element,2)
+        // });
+
+        // squared.forEach((element) => console.log(element))
+        
+
+// program to suffle the cards
+// ===========================
+
+        // let  cards = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
+
+        // let shuffeldCards = shuffle(cards)
+        // console.log(...shuffeldCards)
+        // console.log(cards)
+        // console.log(...cards)
+
+        // function shuffle(array){
+        //         let length = array.length
+        //         let current_index = length
+        //         let temp = 0
+
+        //         while(current_index != 0){
+        //                 random_index = Math.floor(Math.random() * length)
+        //                 current_index-=1;
+        //                 temp = array[current_index]
+        //                 array[current_index] = array[random_index]
+        //                 array[random_index] = temp
+        //         }
+        //         return array
+        // }
 
 
