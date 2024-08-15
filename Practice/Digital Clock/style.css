@@ -12,9 +12,11 @@ nav{
     display:  flex;
     align-items: center;
     justify-content: center;
-    height: 2em;
+    height: auto; 
 }
+
 .clockset{
+    
     display: flex;
     background-color: #0e0d0d;
     justify-content: center;
