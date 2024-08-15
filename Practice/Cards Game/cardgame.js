@@ -81,5 +81,6 @@ document.getElementById("resetButton").onclick = function(){
         idname = "card" + i
         document.getElementById(idname).innerHTML = "?"
         document.getElementById(idname).style.backgroundColor = "black"
+        document.getElementById(idname).style.color = "white"
     }
 }
