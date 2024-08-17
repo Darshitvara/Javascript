@@ -488,3 +488,58 @@ let date = new Date();
 
 // document.getElementById("date").innerHTML = second;
 
+// synchronous code - In an ordered sequence step-by-step linear instructions
+// ==========================================================================
+
+// asynchronous code - Out of sequence. Ex Access a database , Fetch a file,Tasks that take time
+// =============================================================================================
+
+// console.time() - Start a timer you can use to track how long an operation takes ,give each timer a unique name.
+// ============================================================================================================
+
+// console.time("Taken time");
+
+// alert("click..");
+
+// console.timeEnd("Taken time");
+
+
+
+// A promise in JavaScript is like a container for a future value. It is a way of saying, “I don’t have this value right now, but I will have it later.” Imagine you order a book online. You don’t get the book right away, but the store promises to send it to you. While you wait, you can do other things, and when the book arrives, you can read it.
+// ========================================================================================================================================================================================================================================================================================================================================================
+// In the same way, a promise lets you keep working with your code while waiting for something else to finish, like loading data from a server. When the data is ready, the promise will deliver it.
+// =====================================================================================================================================================================================================
+
+// A promise can be in one of three states:
+// =========================================
+// Pending: The promise is waiting for something to finish. For example, waiting for data to load from a website.
+// Fulfilled: The promise has been completed successfully. The data you were waiting for is now available.
+// Rejected: The promise has failed. Maybe there was a problem, like the server not responding.
+// ============================================================================================================
+// let promise = new Promise((resolve,reject) => {
+        
+//         if(compare()){
+//                 resolve();
+//         }
+//         else{
+//                 reject();
+//         }
+        
+// });
+// promise.then(() => {
+//         console.log("Both are same.");
+// })
+// .catch(() => {
+//         console.log("Both are diffrent.");
+// })
+// function compare(){
+//         let val1 = window.prompt("Enter value 1 :");
+//         let val2 = window.prompt("Enter value 2 :");
+//         return val1 === val2;
+// }
+
+
+
+
+
+

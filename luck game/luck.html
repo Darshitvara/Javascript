@@ -1,4 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice game</title>
+    <link rel="stylesheet" href="luck.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;"> Number Guessing Game</h1>
+
+    <div class="dicespace">
+        <div id="dicespace1"> 0 </div>
+        <div id="dicespace2">? </div>
+    </div>
+    <div class="displayContent">
+        <label> Guess the number : </lable>
+            <input type="number" id="guessedNo">
+            <button id="btn" onclick="gameOn">submit</button>
+            <button id="resetbtn" onclick="resetGame">reset</button>
+            <h2 id="msg">Guess It...</h2>
+    </div>
+
+    
+    <script >
+        
 let number = Math.ceil(((Math.random() * 100)));
 // let number = 20;
 let guessedNo = 0;
@@ -27,9 +54,7 @@ document.getElementById("btn").onclick = function(){
         document.getElementById("msg").innerHTML = "Try again darling..go lower.."
     }
 }
+    </script>
+</body>
 
-
-
-
-
-
+</html>
