@@ -16,8 +16,10 @@ h2,h1{
     height: 200px;
     width: 200px;
     background-color: white;
+    box-shadow: 5px 5px 20px rgb(45, 45, 45),-8px -8px 20px rgb(45, 45, 45);
 }
 #dicespace2{
+    box-shadow: 5px 5px 20px rgb(45, 45, 45),-8px -8px 20px rgb(45, 45, 45);
     height: 200px;
     width: 200px;
     background-color: white;
