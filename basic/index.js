@@ -419,7 +419,7 @@ console.log("Hello Universe !");
  
 // s1.print();
 
-// setTimeout() = invokes a function after a number of milliseconds asynchronous function.(Doesn't pause execution)
+// setTimeout() = invokes a function after a number of milliseconds asynchronous(Doesn't pause execution) function.
 // ================================================================================================================
 // let name = "Human";
 
@@ -496,6 +496,7 @@ let date = new Date();
 
 // console.time() - Start a timer you can use to track how long an operation takes ,give each timer a unique name.
 // ============================================================================================================
+
 
 // console.time("Taken time");
 

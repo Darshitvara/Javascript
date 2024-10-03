@@ -368,6 +368,192 @@
         //         return array
         // }
 
+        // map - object that holds key-value pairs of any data types
+        // =========================================================
+        
+        
+        // this keyword - reference to a particular Object,object depends on the immediate OfflineAudioContext
+        // ===================================================================================================
+        // car is an object here.
+        // ======================
+        // const car = {
+        //          model :"ferrari",
+        //          color : "red",
+        //          year : 2024,
+        
+        //          drive : function(){
+        //                 console.log("car can be drived..");
+        //          },
+        //          break : function(){
+        //                 console.log("breaks can be pressed to stop the car.")
+        //          }
+        // }
+        
+        
+        // const car = {
+        //         model :"ferrari",
+        //         color : "red",
+        //         year : 2024,
+        
+        //         model:function(){
+        //                 console.log(`mode : ${model}`);
+                        //  console.log(`mode : ${this.model}`); 
+        //         },
+        //         break : function(){
+        //                console.log("breaks can be pressed to stop the car.")
+        //         }
+        // }
+        // car.model(); // it will give an error(Uncaught ReferenceError: model is not definedat Object.model)
+        // // to eliminate this proble "this" keyword is used.
+        
+        
+        
+        
+        // class - a blueprint for creating objects define what propertices and method they have use a constructor for unique properties 
+        // =============================================================================================================================
+        
+        // class Student{
+        //         constructor(name , age, CGPA){
+        //                 this.name = name;
+        //                 this.age = age;
+        //                 this.CGPA = CGPA;
+        //         }
+        //         print(){
+        //                 console.log(`student name : ${this.name}`);
+        //                 console.log(`student age  : ${this.age}`);
+        //                 console.log(`student cgpa : ${this.CGPA}`);
+        //         }
+        // }
+        // const s1 = new Student("Darshit",19,9.78);
+         
+        // s1.print();
+        
+        // setTimeout() = invokes a function after a number of milliseconds asynchronous(Doesn't pause execution) function.
+        // ================================================================================================================
+        // let name = "Human";
+        
+        // let timer1 = setTimeout(f1,2000,name);
+        // let timer2= setTimeout(f2,5000);
+        // let timer3 =setTimeout(f3,9000);
+        
+        // function f1(name){
+        //         alert(`Hello ${name}..`);
+        // }
+        // function f2(){
+        //         alert("Good morning..!"
+        //         );
+        // }
+        // function f3(){
+        //         alert("Good night");
+        
+        // }
+        
+        // clearTimeout() - It is used to clear the timeouts.
+        // ==================================================
+        
+        // clearTimeout(timer2);
+        
+        // setInterval() = invokes a function repeatedly after a number of milliseconds. asynchronous function
+        // ====================================================================================================
+        
+        // let count = 0;
+        // let max = Number(window.prompt("Enter number : "));
+        
+        // let interval1 = setInterval(countTill,1000,max);
+        // function countTill(max){
+        //         count += 1;
+        //         if(count >= max){
+        //                 clearInterval(interval1);
+        //         }
+        //         console.log(count);
+        // }
+        
+        // The Date object is used to work with dates & times.
+        // =================================================================
+        
+        
+        
+        let date = new Date();
+        // let date = new Date(2024,7,13,20,8,55);
+        // date = date.toLocaleString();
+        
+        
+        // date.setFullYear(2025);
+        
+        // let year = date.getFullYear();
+        // let month = date.getMonth();
+        // let day = date.getDate();
+        // let week = date.getDay();
+        // let hour = date.getHours();
+        // let minute = date.getMinutes();
+        // let second = date.getSeconds();
+        // let milliseconds = date.getMilliseconds();
+        
+        
+        // document.getElementById("date").innerHTML = formateTime();
+        // function formateTime(){
+        //         return `${date.getDate()} / ${date.getMonth()+1} / ${date.getFullYear()} `
+        // }
+        
+        // document.getElementById("date").innerHTML = second;
+        
+        // synchronous code - In an ordered sequence step-by-step linear instructions
+        // ==========================================================================
+        
+        // asynchronous code - Out of sequence. Ex Access a database , Fetch a file,Tasks that take time
+        // =============================================================================================
+        
+        // console.time() - Start a timer you can use to track how long an operation takes ,give each timer a unique name.
+        // ============================================================================================================
+        
+        
+        // console.time("Taken time");
+        
+        // alert("click..");
+        
+        // console.timeEnd("Taken time");
+        
+        
+        
+        // A promise in JavaScript is like a container for a future value. It is a way of saying, “I don’t have this value right now, but I will have it later.” Imagine you order a book online. You don’t get the book right away, but the store promises to send it to you. While you wait, you can do other things, and when the book arrives, you can read it.
+        // ========================================================================================================================================================================================================================================================================================================================================================
+        // In the same way, a promise lets you keep working with your code while waiting for something else to finish, like loading data from a server. When the data is ready, the promise will deliver it.
+        // =====================================================================================================================================================================================================
+        
+        // A promise can be in one of three states:
+        // =========================================
+        // Pending: The promise is waiting for something to finish. For example, waiting for data to load from a website.
+        // Fulfilled: The promise has been completed successfully. The data you were waiting for is now available.
+        // Rejected: The promise has failed. Maybe there was a problem, like the server not responding.
+        // ============================================================================================================
+        // let promise = new Promise((resolve,reject) => {
+                
+        //         if(compare()){
+        //                 resolve();
+        //         }
+        //         else{
+        //                 reject();
+        //         }
+                
+        // });
+        // promise.then(() => {
+        //         console.log("Both are same.");
+        // })
+        // .catch(() => {
+        //         console.log("Both are diffrent.");
+        // })
+        // function compare(){
+        //         let val1 = window.prompt("Enter value 1 :");
+        //         let val2 = window.prompt("Enter value 2 :");
+        //         return val1 === val2;
+        // }
+        
+        
+        
+        
+        
+        
+        
 
 
         </pre>
