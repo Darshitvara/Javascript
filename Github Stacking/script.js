@@ -27,6 +27,8 @@ user_container.innerHTML += `<h1 class="username text-white"> ${userName}</h1>`
 
 
 // user following details section 
+const container = document.querySelector(".card-columns");
+
 const requestURL = `https://api.github.com/users/${userName}/following`
 const options ={
     method : "GET"
@@ -40,9 +42,16 @@ async function fetchData(requestURL) {
         let response = await fetch(requestURL,options)
         let responseText = await response.json()
 
-        // console.log(responseText)
+        console.log(responseText)
 
-        ExtractData(responseText)
+        if(responseText.status != 404){
+            ExtractData(responseText)
+            // console.log("here")
+        }
+        else{
+            container.innerHTML += "<h1 text-white>  User Not Found</h1>"
+        }
+
     }
     catch(e){
         console.log(e)
@@ -58,7 +67,6 @@ function ExtractData(response){
     }
 }   
 function displayData(userID,userAvatar){
-    const container = document.querySelector(".card-columns");
     const user = document.querySelector(".username")
 
     user.textContent = userName;

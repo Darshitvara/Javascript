@@ -9,23 +9,6 @@ const userImage = `https://avatars.githubusercontent.com/u/125804877?v=4`
 user_container.innerHTML += `<img class=" user-img rounded-circle img-fluid" src=${userImage} alt="Title" />`
 user_container.innerHTML += `<h1 class="username text-white"> ${userName}</h1>`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // user following details section 
 const requestURL = `https://api.github.com/users/${userName}/following`
 const options ={

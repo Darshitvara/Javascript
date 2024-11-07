@@ -314,6 +314,9 @@
   </form>
 </body>
 <script>
+
+  // animation stuff
+
   const form = document.querySelector('form')
   const submitBtn = document.querySelector('form button')
   const progressbar = document.querySelector('.progressbar')
@@ -347,6 +350,8 @@
       submitted.style.top = '0'
     }, 2090)
 
+
+    // API data and request stuff
     setTimeout(() => {
       let userID = document.getElementById("userID").value
 
@@ -358,17 +363,17 @@
 
       xhr.onreadystatechange = function () {
           if(xhr.readyState === 4) {
-          const response = JSON.parse(this.responseText)
+            const response = JSON.parse(this.responseText)
 
-          if (response.status === "404") {
-            document.location.href = './error.html'
-          }
-          else {
-            sessionStorage.setItem('loggedIn', 'true');
-            // Convert JSON object to a string and store it in local storage
-            localStorage.setItem('data', JSON.stringify(response));
-            document.location.href = './main.html'
-          }
+            if (response.status === "404") {
+              document.location.href = './error.html'
+            }
+            else {
+              sessionStorage.setItem('loggedIn', 'true');
+              // Convert JSON object to a string and store it in local storage
+              localStorage.setItem('data', JSON.stringify(response));
+              document.location.href = './main.html'
+            }
         }
       }
       xhr.send()
