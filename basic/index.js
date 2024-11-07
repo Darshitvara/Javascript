@@ -1,4 +1,4 @@
-console.log("Hello Universe !");
+// console.log("Hello Universe !");
 
 // way = 1 to take user input 
 // ==========================
@@ -540,7 +540,57 @@ let date = new Date();
 // }
 
 
+// We can not change the value of PI because it's defined as constant 
+// ==================================================================
+
+// console.log(Object.getOwnPropertyDescriptor(Math,"PI"))
+
+// Object.defineProperty(Math,"PI",{
+//         writable:  true
+//         })
+        
+// console.log(Object.getOwnPropertyDescriptor(Math,"PI"))
+
+// In normal object properties can be easily modify.
+// ==================================================================
+
+// const obj = {
+//         username : "user1",
+//         password : "pass1"
+// }
+// console.log(Object.getOwnPropertyDescriptor(obj,"username"))
+
+// Object.defineProperty(obj,"username",{
+//         value : "Darshit",
+//         writable: false
+// })
+
+// console.log(Object.getOwnPropertyDescriptor(obj,"username"))
 
 
+// binds two contexts without loosing any.. 
+// In out case, function handleClick() is called from the context of button ..
+// (by word button context means the context that helps to locate the button from which function is invoked.)
+// and button context is not aware with the current context of React.handleClick()
+// to let button context know the current context we bind the current context using bind methos
+// It does not overrides the button context .. 
 
+// class React {
+//         constructor(){
+//             this.library = "React"
+//             this.server = "https://localhost:300"
 
+//             //requirement
+//             document
+//                 .querySelector('button')
+//                 .addEventListener('click', this.handleClick.bind(this))
+//         }
+//         handleClick(){
+//                 console.log(this)
+//             console.log("button clicked");
+//             console.log(this.server);
+            
+//         }
+//     }
+
+//     const app = new React()
